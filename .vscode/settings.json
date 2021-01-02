@@ -1,0 +1,31 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": false,
+  "files.exclude": {
+    "**/node_modules": false,
+    "**/e2e": false,
+    "**/.browserslistrc": false,
+    "**/package-lock.json": false,
+    "**/karma.conf.js": false,
+    "**/tsconfig.spec.json": false,
+    "**/.prettierrc": false,
+    "**/.prettierignore": false,
+    "**/buildspec.yml": false,
+    "**/.stylelintrc.json": false,
+    "**/angular.json": false,
+    "**/.gitignore": false,
+    "**/.gitkeep": false,
+    "tsconfig.app.json": false,
+    "tsconfig.json": false,
+    "tslint.json": false,
+    "README.md": false,
+    "src/favicon.ico": false,
+    "src/main.ts": false,
+    "src/polyfills.ts": false,
+    "src/test.ts": false,
+    "src/typings.d.ts": false
+  },
+  "git.ignoreLimitWarning": true
+}
