@@ -8,10 +8,10 @@ import compression from 'compression';
 import swaggerUi from 'swagger-ui-express';
 import swaggerJSDoc from 'swagger-jsdoc';
 import { connect, set } from 'mongoose';
-import { dbConnection } from './database';
-import Routes from './interfaces/routes.interface';
+import { dbConnection } from './core/database'; 
 import errorMiddleware from './middlewares/error.middleware';
-import { logger, stream } from './utils/logger';
+import { logger, stream } from './core/utils'; 
+import { Routes } from './core/interfaces';
 
 class App {
   public app: express.Application;

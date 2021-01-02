@@ -25,7 +25,9 @@
     "package.json": true,
     "swagger.yaml": true,
     "src/polyfills.ts": true,
-    "tsconfig.json": true
+    "tsconfig.json": true,
+    "src/tests": true,
+    "build/": true
   },
   "git.ignoreLimitWarning": true
 }

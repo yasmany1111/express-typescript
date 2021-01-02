@@ -3,10 +3,10 @@ import mongoose from 'mongoose';
 import request from 'supertest';
 import App from '../app';
 import AuthRoute from '../routes/auth.route';
-import { CreateUserDto } from '../dtos/users.dto';
-import HttpException from '../exceptions/HttpException';
-import { TokenData } from '../interfaces/auth.interface';
-import AuthService from '../services/auth.service';
+import { CreateUserDto } from '../core/dtos/users.dto';
+import HttpException from '../core/exceptions/HttpException'; 
+import AuthService from '../core/services/auth.service';
+import { TokenData } from '../core/interfaces';
 
 afterAll(async () => {
   await new Promise<void>(resolve => setTimeout(() => resolve(), 500));
