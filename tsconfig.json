@@ -14,7 +14,9 @@
     "outDir": "./build",
     "allowJs": true,
     "noEmit": false,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
   },
   "include": ["./src/**/*", ".env"],
   "exclude": ["node_modules"]

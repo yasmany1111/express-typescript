@@ -1,8 +1,8 @@
 import { NextFunction, Response } from 'express';
 import jwt from 'jsonwebtoken';
-import { RequestWithUser, DataStoredInToken } from '../core/interfaces';
-import HttpException from '../core/exceptions/HttpException'; 
-import userModel from '../core/models/users.model';
+import { RequestWithUser, DataStoredInToken } from '../interfaces';
+import HttpException from '../exceptions/HttpException';
+import userModel from '../models/users.model';
 
 const authMiddleware = async (req: RequestWithUser, res: Response, next: NextFunction) => {
   try {

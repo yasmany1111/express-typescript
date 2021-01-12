@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import UsersController from '../controllers/users.controller';
+import UsersController from './users.controller';
 import { Routes } from '../core/interfaces';
-import { CreateUserDto } from '../core/dtos/users.dto'; 
-import validationMiddleware from '../middlewares/validation.middleware';
+import { CreateUserDto } from '../core/dtos/users.dto';
+import validationMiddleware from '../core/middlewares/validation.middleware';
 
 class UsersRoute implements Routes {
   public path = '/users';

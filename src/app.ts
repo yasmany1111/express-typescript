@@ -8,9 +8,9 @@ import compression from 'compression';
 import swaggerUi from 'swagger-ui-express';
 import swaggerJSDoc from 'swagger-jsdoc';
 import { connect, set } from 'mongoose';
-import { dbConnection } from './core/database'; 
-import errorMiddleware from './middlewares/error.middleware';
-import { logger, stream } from './core/utils'; 
+import { dbConnection } from './core/database';
+import errorMiddleware from './core/middlewares/error.middleware';
+import { logger, stream } from './core/utils';
 import { Routes } from './core/interfaces';
 
 class App {

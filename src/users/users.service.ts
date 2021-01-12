@@ -1,9 +1,9 @@
 import bcrypt from 'bcrypt';
-import { CreateUserDto } from '../dtos/users.dto';
-import HttpException from '../exceptions/HttpException';
-import { User } from '../interfaces/users.interface';
-import userModel from '../models/users.model';
-import { isEmpty } from '../utils/util';
+import { CreateUserDto } from '../core/dtos/users.dto';
+import HttpException from '../core/exceptions/HttpException';
+import { User } from '../core/interfaces/users.interface';
+import userModel from '../core/models/users.model';
+import { isEmpty } from '../core/utils/util';
 
 class UserService {
   public users = userModel;

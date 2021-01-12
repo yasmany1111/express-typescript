@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 import request from 'supertest';
-import App from '../app';
-import UsersRoute from '../routes/users.route';
+import App from '../../app';
+import UsersRoute from '../../users/users.route';
 
 afterAll(async () => {
   await new Promise<void>(resolve => setTimeout(() => resolve(), 500));
